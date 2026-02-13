@@ -1,0 +1,15 @@
+web_users = ['singatrawails','sasstronautgonna','spiffyflies22','smellsnowflake','popcorny']
+new_users = ['spieswideopen','sin-tranella','sasstronautgonna','miffyvonhorstinhofferstein','popcorny','<3smiles']
+for user in new_users:
+    if user in web_users:
+        print(f"Sorry, {user.title()}, this user name is already in use, please choose another user name.")
+    else:
+        print(f"Thank you for joining our site, {user.title()}, the username is available!")
+
+cities = {}
+cities['Boston'] = {'country':'usa','population':'682,313','fact':'The famous midgnight ride of Paul Revere started in Boston on the 18th of April in 1775.'}
+cities['Berlin'] = {'country':'Germany','population':'3,600,000','fact':'The fall of the Berlin wall took place on November 9th, 1989.'}
+cities['San Francisco'] = {'country':'usa','population':'827,526','fact':'Officially, no one ever escaped from Alcatraz. However, the bodies of 3 escaped men in 1962 were never found, and though presumed drowned, some theories believe otherwise.'}
+for city, city_info in cities.items():
+    print(f"{city}: {city_info['country']}: {city_info['population']}: {city_info['fact']}: ")
+  
